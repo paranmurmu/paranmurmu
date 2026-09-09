@@ -90,3 +90,10 @@ Building Digital Products
 <p align="center">
   ⭐ Thanks for visiting my profile!
 </p>
+<p align="center">
+  <img
+    src="./dark.svg"
+    width="100%"
+    alt="Paran Murmu"
+  />
+</p>
