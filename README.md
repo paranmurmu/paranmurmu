@@ -76,7 +76,7 @@ Building Digital Products
     Twitter
   </a>
   &nbsp; • &nbsp;
-  <a href="https://paran-murmu.dev">
+  <a href="https://paranmurmuportfolio.vercel.app/?_vercel_share=fUrtpKPUB4PTj8Qp18E5aECJoef7lMTrhttps://paranmurmuportfolio-ea0wzq1vv-paranmurmus-projects.vercel.app/">
     Portfolio
   </a>
 </p>
