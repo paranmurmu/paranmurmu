@@ -26,7 +26,7 @@
 * 🎨 Creative Artist & Digital Creator
 * 🚀 Entrepreneur & Builder
 * 🌱 Always learning something new
-* 📍 West Bengal, India
+* 📍 Gopalpur, Madargachhi, Karandighi, Uttar Dinajpur, West Bengal, India
 
 ---
 
