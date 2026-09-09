@@ -92,7 +92,7 @@ Building Digital Products
 </p>
 <p align="center">
   <img
-    src="./dark_photo_embedded-3.svg"
+    src="./dark.svg"
     width="100%"
     alt="Paran Murmu"
   />
