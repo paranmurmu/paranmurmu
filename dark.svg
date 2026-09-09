@@ -1,0 +1,816 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1180 610"
+     width="100%"
+     role="img"
+     aria-labelledby="title desc">
+
+  <title id="title">Paran Murmu — Animated Developer Profile</title>
+  <desc id="desc">
+    Premium animated cyber glassmorphism GitHub profile banner.
+  </desc>
+
+  <defs>
+
+    <!-- ================= BACKGROUND ================= -->
+
+    <linearGradient id="background"
+                    x1="0" y1="0"
+                    x2="1" y2="1">
+
+      <stop stop-color="#030712"/>
+      <stop offset=".5" stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#020617"/>
+
+    </linearGradient>
+
+
+    <!-- ================= ACCENT ================= -->
+
+    <linearGradient id="accent"
+                    x1="0%" y1="0%"
+                    x2="100%" y2="0%">
+
+      <stop stop-color="#7C3AED"/>
+      <stop offset=".5" stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#10B981"/>
+
+      <animate
+        attributeName="x1"
+        values="0%;100%;0%"
+        dur="8s"
+        repeatCount="indefinite"/>
+
+      <animate
+        attributeName="x2"
+        values="100%;200%;100%"
+        dur="8s"
+        repeatCount="indefinite"/>
+
+    </linearGradient>
+
+
+    <!-- ================= PHOTO GRADIENT ================= -->
+
+    <linearGradient id="photoGradient"
+                    x1="0"
+                    y1="0"
+                    x2="1"
+                    y2="1">
+
+      <stop stop-color="#22D3EE"
+            stop-opacity=".25"/>
+
+      <stop offset=".5"
+            stop-color="#7C3AED"
+            stop-opacity=".05"/>
+
+      <stop offset="1"
+            stop-color="#10B981"
+            stop-opacity=".22"/>
+
+    </linearGradient>
+
+
+    <!-- ================= GLOW ================= -->
+
+    <filter id="photoGlow"
+            x="-50%"
+            y="-50%"
+            width="200%"
+            height="200%">
+
+      <feGaussianBlur
+        stdDeviation="7"
+        result="blur"/>
+
+      <feMerge>
+
+        <feMergeNode in="blur"/>
+
+        <feMergeNode in="SourceGraphic"/>
+
+      </feMerge>
+
+    </filter>
+
+
+    <filter id="softGlow"
+            x="-100%"
+            y="-100%"
+            width="300%"
+            height="300%">
+
+      <feGaussianBlur
+        stdDeviation="30"/>
+
+    </filter>
+
+
+    <!-- ================= RADIAL GLOWS ================= -->
+
+    <radialGradient id="purpleGlow">
+
+      <stop
+        stop-color="#7C3AED"
+        stop-opacity=".28"/>
+
+      <stop
+        offset="1"
+        stop-color="#7C3AED"
+        stop-opacity="0"/>
+
+    </radialGradient>
+
+
+    <radialGradient id="cyanGlow">
+
+      <stop
+        stop-color="#22D3EE"
+        stop-opacity=".20"/>
+
+      <stop
+        offset="1"
+        stop-color="#22D3EE"
+        stop-opacity="0"/>
+
+    </radialGradient>
+
+
+    <!-- ================= PHOTO MASK ================= -->
+
+    <clipPath id="photoClip">
+
+      <rect
+        x="610"
+        y="110"
+        width="390"
+        height="440"
+        rx="28"/>
+
+    </clipPath>
+
+
+    <!-- ================= NOISE ================= -->
+
+    <pattern id="noise"
+             width="90"
+             height="90"
+             patternUnits="userSpaceOnUse">
+
+      <circle
+        cx="12"
+        cy="15"
+        r=".8"
+        fill="#FFFFFF"
+        opacity=".08"/>
+
+      <circle
+        cx="48"
+        cy="42"
+        r=".7"
+        fill="#22D3EE"
+        opacity=".06"/>
+
+      <circle
+        cx="76"
+        cy="70"
+        r=".8"
+        fill="#A78BFA"
+        opacity=".06"/>
+
+    </pattern>
+
+
+    <!-- ================= MAIN CLIP ================= -->
+
+    <clipPath id="mainClip">
+
+      <rect
+        width="1180"
+        height="610"
+        rx="32"/>
+
+    </clipPath>
+
+  </defs>
+
+
+  <!-- ================================================= -->
+  <!-- MAIN -->
+  <!-- ================================================= -->
+
+  <g clip-path="url(#mainClip)">
+
+
+    <!-- BACKGROUND -->
+
+    <rect
+      width="1180"
+      height="610"
+      fill="url(#background)"/>
+
+
+    <!-- ================================================= -->
+    <!-- FLOATING BACKGROUND GLOW -->
+    <!-- ================================================= -->
+
+    <circle
+      cx="200"
+      cy="100"
+      r="250"
+      fill="url(#purpleGlow)"
+      filter="url(#softGlow)">
+
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0 0;50 25;0 0"
+        dur="12s"
+        repeatCount="indefinite"/>
+
+    </circle>
+
+
+    <circle
+      cx="980"
+      cy="480"
+      r="260"
+      fill="url(#cyanGlow)"
+      filter="url(#softGlow)">
+
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0 0;-40 -30;0 0"
+        dur="15s"
+        repeatCount="indefinite"/>
+
+    </circle>
+
+
+    <!-- NOISE -->
+
+    <rect
+      width="1180"
+      height="610"
+      fill="url(#noise)"/>
+
+
+    <!-- ================================================= -->
+    <!-- PARTICLES -->
+    <!-- ================================================= -->
+
+    <g
+      fill="#22D3EE"
+      filter="url(#photoGlow)">
+
+      <circle cx="80" cy="90" r="1.5">
+
+        <animate
+          attributeName="opacity"
+          values=".1;1;.1"
+          dur="3s"
+          repeatCount="indefinite"/>
+
+      </circle>
+
+
+      <circle cx="470" cy="150" r="1">
+
+        <animate
+          attributeName="opacity"
+          values="1;.1;1"
+          dur="4s"
+          repeatCount="indefinite"/>
+
+      </circle>
+
+
+      <circle cx="1080" cy="90" r="1.4">
+
+        <animate
+          attributeName="opacity"
+          values=".1;.8;.1"
+          dur="2.5s"
+          repeatCount="indefinite"/>
+
+      </circle>
+
+
+      <circle cx="1040" cy="550" r="1">
+
+        <animate
+          attributeName="opacity"
+          values=".8;.1;.8"
+          dur="3.5s"
+          repeatCount="indefinite"/>
+
+      </circle>
+
+    </g>
+
+
+    <!-- ================================================= -->
+    <!-- LEFT INFORMATION -->
+    <!-- ================================================= -->
+
+    <g font-family="Arial, Helvetica, sans-serif">
+
+
+      <text
+        x="65"
+        y="90"
+        fill="#64748B"
+        font-family="monospace"
+        font-size="12"
+        letter-spacing="3">
+
+        PARAN://IDENTITY
+
+      </text>
+
+
+      <text
+        x="65"
+        y="145"
+        fill="#F8FAFC"
+        font-size="44"
+        font-weight="800">
+
+        Paran
+
+      </text>
+
+
+      <text
+        x="65"
+        y="190"
+        fill="url(#accent)"
+        font-size="44"
+        font-weight="800">
+
+        Murmu
+
+      </text>
+
+
+      <!-- animated underline -->
+
+      <rect
+        x="67"
+        y="207"
+        width="150"
+        height="3"
+        rx="2"
+        fill="url(#accent)">
+
+        <animate
+          attributeName="width"
+          values="50;180;150"
+          dur="3s"
+          repeatCount="indefinite"/>
+
+      </rect>
+
+
+      <!-- ROLE -->
+
+      <text
+        x="67"
+        y="250"
+        fill="#94A3B8"
+        font-family="monospace"
+        font-size="14">
+
+        ACTOR • ARTIST • ENTREPRENEUR
+
+      </text>
+
+
+      <text
+        x="67"
+        y="277"
+        fill="#94A3B8"
+        font-family="monospace"
+        font-size="14">
+
+        DIGITAL CREATOR • MARKETER
+
+      </text>
+
+
+      <!-- CODE TERMINAL -->
+
+      <rect
+        x="65"
+        y="315"
+        width="470"
+        height="170"
+        rx="20"
+        fill="#0F172A"
+        fill-opacity=".70"
+        stroke="#FFFFFF"
+        stroke-opacity=".08"/>
+
+
+      <circle
+        cx="90"
+        cy="340"
+        r="4"
+        fill="#EF4444"/>
+
+      <circle
+        cx="105"
+        cy="340"
+        r="4"
+        fill="#F59E0B"/>
+
+      <circle
+        cx="120"
+        cy="340"
+        r="4"
+        fill="#10B981"/>
+
+
+      <text
+        x="85"
+        y="375"
+        fill="#64748B"
+        font-family="monospace"
+        font-size="12">
+
+        $ whoami
+
+      </text>
+
+
+      <text
+        x="85"
+        y="400"
+        fill="#22D3EE"
+        font-family="monospace"
+        font-size="14">
+
+        Paran_Murmu
+
+      </text>
+
+
+      <text
+        x="85"
+        y="428"
+        fill="#64748B"
+        font-family="monospace"
+        font-size="12">
+
+        $ focus
+
+      </text>
+
+
+      <text
+        x="85"
+        y="452"
+        fill="#A78BFA"
+        font-family="monospace"
+        font-size="13">
+
+        Web • AI • Creative Technology
+
+      </text>
+
+
+      <text
+        x="85"
+        y="477"
+        fill="#64748B"
+        font-family="monospace"
+        font-size="12">
+
+        $ status
+
+      </text>
+
+
+      <text
+        x="160"
+        y="477"
+        fill="#10B981"
+        font-family="monospace"
+        font-size="12">
+
+        ● BUILDING
+
+      </text>
+
+
+    </g>
+
+
+    <!-- ================================================= -->
+    <!-- PHOTO FRAME -->
+    <!-- ================================================= -->
+
+    <rect
+      x="585"
+      y="85"
+      width="440"
+      height="480"
+      rx="34"
+      fill="#0F172A"
+      fill-opacity=".50"
+      stroke="url(#accent)"
+      stroke-width="1.5"
+      filter="url(#photoGlow)">
+
+
+      <animate
+        attributeName="stroke-opacity"
+        values=".35;.9;.35"
+        dur="4s"
+        repeatCount="indefinite"/>
+
+    </rect>
+
+
+    <!-- ================================================= -->
+    <!-- PHOTO FLOATING -->
+    <!-- ================================================= -->
+
+    <g>
+
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0 0;0 -6;0 0"
+        dur="5s"
+        repeatCount="indefinite"/>
+
+
+      <!-- USER PHOTO -->
+
+      <image
+        href="./paran.jpg"
+        x="610"
+        y="110"
+        width="390"
+        height="440"
+        preserveAspectRatio="xMidYMid slice"
+        clip-path="url(#photoClip)"
+        filter="url(#photoGlow)"/>
+
+
+      <!-- CYBER COLOR OVERLAY -->
+
+      <rect
+        x="610"
+        y="110"
+        width="390"
+        height="440"
+        rx="28"
+        fill="url(#photoGradient)"
+        opacity=".32"
+        clip-path="url(#photoClip)"/>
+
+
+      <!-- DARK VIGNETTE -->
+
+      <rect
+        x="610"
+        y="110"
+        width="390"
+        height="440"
+        rx="28"
+        fill="#030712"
+        opacity=".18"
+        clip-path="url(#photoClip)"/>
+
+
+      <!-- ================================================= -->
+      <!-- PHOTO SCANLINE -->
+      <!-- ================================================= -->
+
+      <rect
+        x="610"
+        y="110"
+        width="390"
+        height="3"
+        fill="url(#accent)"
+        opacity=".75"
+        filter="url(#photoGlow)">
+
+        <animate
+          attributeName="y"
+          values="110;547;110"
+          dur="4s"
+          repeatCount="indefinite"/>
+
+      </rect>
+
+
+      <!-- SECOND SCANLINE -->
+
+      <rect
+        x="610"
+        y="110"
+        width="390"
+        height="1"
+        fill="#FFFFFF"
+        opacity=".25">
+
+        <animate
+          attributeName="y"
+          values="120;540;120"
+          dur="7s"
+          repeatCount="indefinite"/>
+
+      </rect>
+
+    </g>
+
+
+    <!-- ================================================= -->
+    <!-- PHOTO CORNER HUD -->
+    <!-- ================================================= -->
+
+    <g
+      fill="none"
+      stroke="#22D3EE"
+      stroke-width="2"
+      filter="url(#photoGlow)">
+
+      <path d="M600 135V110H625"/>
+
+      <path d="M990 110H1015V135"/>
+
+      <path d="M600 520V550H625"/>
+
+      <path d="M990 550H1015V520"/>
+
+    </g>
+
+
+    <!-- ================================================= -->
+    <!-- RIGHT PROFILE DATA -->
+    <!-- ================================================= -->
+
+    <g
+      font-family="monospace"
+      font-size="12">
+
+      <text
+        x="1040"
+        y="145"
+        fill="#64748B">
+
+        PROFILE
+
+      </text>
+
+
+      <text
+        x="1040"
+        y="175"
+        fill="#22D3EE">
+
+        WEST BENGAL
+
+      </text>
+
+
+      <text
+        x="1040"
+        y="198"
+        fill="#94A3B8">
+
+        INDIA
+
+      </text>
+
+
+      <text
+        x="1040"
+        y="245"
+        fill="#64748B">
+
+        CURRENT FOCUS
+
+      </text>
+
+
+      <text
+        x="1040"
+        y="272"
+        fill="#A78BFA">
+
+        WEB / AI
+
+      </text>
+
+
+      <text
+        x="1040"
+        y="295"
+        fill="#A78BFA">
+
+        CREATIVE TECH
+
+      </text>
+
+
+      <text
+        x="1040"
+        y="340"
+        fill="#64748B">
+
+        SYSTEM
+
+      </text>
+
+
+      <text
+        x="1040"
+        y="367"
+        fill="#10B981">
+
+        ● ONLINE
+
+      </text>
+
+    </g>
+
+
+    <!-- ================================================= -->
+    <!-- BOTTOM -->
+    <!-- ================================================= -->
+
+    <text
+      x="65"
+      y="550"
+      fill="#64748B"
+      font-family="monospace"
+      font-size="11">
+
+      CREATE • LEARN • BUILD • GROW
+
+    </text>
+
+
+    <text
+      x="880"
+      y="575"
+      fill="#22D3EE"
+      font-family="monospace"
+      font-size="11">
+
+      KEEP BUILDING...
+
+    </text>
+
+
+    <!-- ================================================= -->
+    <!-- GLOBAL SCANLINE -->
+    <!-- ================================================= -->
+
+    <rect
+      x="0"
+      y="0"
+      width="1180"
+      height="2"
+      fill="url(#accent)"
+      opacity=".25">
+
+      <animate
+        attributeName="y"
+        values="0;610;0"
+        dur="8s"
+        repeatCount="indefinite"/>
+
+    </rect>
+
+
+    <!-- ================================================= -->
+    <!-- BORDER SHIMMER -->
+    <!-- ================================================= -->
+
+    <rect
+      x="1"
+      y="1"
+      width="1178"
+      height="608"
+      rx="32"
+      fill="none"
+      stroke="url(#accent)"
+      stroke-width="1.5">
+
+      <animate
+        attributeName="stroke-opacity"
+        values=".25;.9;.25"
+        dur="4s"
+        repeatCount="indefinite"/>
+
+    </rect>
+
+  </g>
+
+</svg>
